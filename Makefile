@@ -3,14 +3,14 @@ CC     ?= cc
 PREFIX ?= /usr/local
 
 ifeq ($(OS),Windows_NT)
-BINS    = clib.exe clib-install.exe clib-search.exe
-LDFLAGS = -lcurldll
+BINS    = makeheaders.exe
+LDFLAGS = 
 CP      = copy /Y
 RM      = del /Q /S
 MKDIR_P = mkdir
 else
-BINS    = clib clib-install clib-search
-LDFLAGS = -lcurl
+BINS    = makeheaders
+LDFLAGS = 
 CP      = cp -f
 RM      = rm -f
 MKDIR_P = mkdir -p
