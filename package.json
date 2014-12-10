@@ -5,6 +5,6 @@
   "description": "clib package of http://www.hwaci.com/sw/mkhdr/",
   "keywords": ["makeheaders"],
   "license": "BSD",
-  "src": ["src/makeheaders.c"]
+  "src": ["src/makeheaders.c"],
   "install": "make install"
 }
